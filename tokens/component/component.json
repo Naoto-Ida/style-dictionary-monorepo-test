@@ -1,0 +1,17 @@
+{
+  "component": {
+    "button": {
+      "color": {
+        "value": "{semanticColor.textButton.default.value}"
+      },
+      "border-radius": {
+        "value": "{globalRadius.s.value}"
+      },
+      "&:hover": {
+        "backgroundColor": {
+          "value": "{semanticColor.textButton.hover.value}"
+        }
+      }
+    }
+  }
+}

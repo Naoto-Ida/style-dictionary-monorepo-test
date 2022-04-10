@@ -1,0 +1,15 @@
+{
+  "semanticColor": {
+    "textButton": {
+      "default": {
+        "value": "{globalColor.base.gray.medium.value}"
+      },
+      "hover": {
+        "value": "{globalColor.base.gray.dark.value}"
+      },
+      "disabled": {
+        "value": "{globalColor.base.gray.light.value}"
+      }
+    }
+  }
+}

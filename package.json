@@ -1,0 +1,27 @@
+{
+  "name": "style-dictionary-monorepo-test",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=16"
+  },
+  "workspaces": {
+    "packages": [
+      "./packages/*"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "lerna": "^4.0.0",
+    "style-dictionary": "^3.7.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "clean": "rm -rf packages/**/lib",
+    "prebuild": "yarn clean && node --loader ts-node/esm scripts/build.ts",
+    "build": "lerna run build"
+  }
+}

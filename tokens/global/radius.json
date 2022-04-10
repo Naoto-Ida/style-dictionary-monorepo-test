@@ -1,0 +1,10 @@
+{
+  "globalRadius": {
+    "s": {
+      "value": "4px"
+    },
+    "l": {
+      "value": "9999px"
+    }
+  }
+}

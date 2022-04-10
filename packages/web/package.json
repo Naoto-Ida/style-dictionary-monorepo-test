@@ -1,0 +1,9 @@
+{
+  "name": "@tokens/web",
+  "version": "1.0.0",
+  "main": "./lib/js/index.js",
+  "module": "./lib/js/index.js",
+  "license": "MIT",
+  "type": "module",
+  "types": "./lib/@types/index.d.ts"
+}

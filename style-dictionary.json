@@ -1,0 +1,70 @@
+{
+  "include": ["tokens/global/*.json"],
+  "source": ["tokens/semantic/**/*.json", "tokens/component/**/*.json"],
+  "platforms": {
+    "web/css": {
+      "prefix": "ds",
+      "transformGroup": "css",
+      "buildPath": "packages/web/lib/css/",
+      "files": [
+        {
+          "destination": "variables.css",
+          "format": "css/variables",
+          "options": {
+            "outputReferences": true
+          }
+        }
+      ]
+    },
+    "web/css/components": {
+      "prefix": "ds",
+      "transformGroup": "css",
+      "buildPath": "packages/web/lib/css/",
+      "files": [
+        {
+          "destination": "components.css",
+          "format": "css/components",
+          "options": {
+            "outputReferences": true
+          }
+        }
+      ]
+    },
+    "web/scss": {
+      "prefix": "ds",
+      "transformGroup": "scss",
+      "buildPath": "packages/web/lib/scss/",
+      "files": [
+        {
+          "destination": "_variables.scss",
+          "format": "scss/variables",
+          "options": {
+            "outputReferences": true
+          }
+        }
+      ]
+    },
+    "web/cjs": {
+      "prefix": "ds",
+      "transforms": ["attribute/cti", "name/cti/camel", "size/px", "color/hex"],
+      "buildPath": "packages/web/lib/js/cjs/",
+      "files": [
+        {
+          "destination": "index.cjs",
+          "format": "javascript/module-flat"
+        }
+      ]
+    },
+    "web/esm": {
+      "prefix": "ds",
+      "transforms": ["attribute/cti", "name/cti/camel", "size/px", "color/hex"],
+      "buildPath": "packages/web/lib/js/esm/",
+      "files": [
+        {
+          "destination": "index.js",
+          "format": "javascript/es6"
+        }
+      ]
+    }
+  }
+}
